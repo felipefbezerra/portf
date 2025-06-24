@@ -69,7 +69,7 @@ function App() {
           </p>
           <div className="btn-box">
             <a href="https://www.linkedin.com/in/felipe-florentino-bezerra/">Contrate Me</a>
-            <a href="#contact">Contate-me!</a>
+            <a href="#contact">Contato</a>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ function App() {
         </h2>
 
         <div className="about-img">
-          <img src="/img/me1.jpg" alt="Minha Foto" />
+        <img src={`${import.meta.env.BASE_URL}img/me1.jpg`} alt="Minha Foto" />
           <span className="circle-spin"></span>
         </div>
 
@@ -157,7 +157,7 @@ function App() {
         </h2>
         <div className="portfolio-carousel">
           <div className="portfolio-item">
-            <img src="/img/musikcitylogo.png" alt="Project 1" />
+            <img src={`${import.meta.env.BASE_URL}img/musikcitylogo.png`} alt="Project 1" />
             <h3>MusikCity</h3>
             <p>
               Re-Branding e Prototipagem do Site da Produtora MusikCity para a
@@ -175,7 +175,7 @@ function App() {
             <a href="https://github.com/felipefbezerra/studentcalc" target="_blank" rel="noreferrer">Ver Projeto</a>
           </div>
           <div className="portfolio-item">
-            <img src="/img/logoathenas.png" alt="Project 3" />
+            <img src={`${import.meta.env.BASE_URL}img/logoathenas.png`} alt="Project 3" />
             <h3>Instituto Athenas</h3>
             <p>Site Institucional do projeto social denominado Instituto Athenas</p>
             <a href="https://www.institutoathenas.org/" target="_blank" rel="noreferrer">Ver Projeto</a>

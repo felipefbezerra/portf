@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 * {
     margin: 0;
@@ -12,11 +13,15 @@
     font-family: Poppins;
 }
 
+h1, h2, h3, span, .heading {
+    font-family: 'Reggae One', cursive;
+}
+
 :root {
-    --bg-color: #44749d;
-    --second-bg-color: #294380;
-    --text-bg-color: #b9f1d6;
-    --main-color: #b9f1d6;
+    --bg-color: #021b33;
+    --second-bg-color: #12577b;
+    --text-bg-color: #ededed;
+    --main-color: #a9cfe5;
 }
 
 html {
@@ -48,6 +53,7 @@ body{
 
 .logo{
     position: relative;
+    font-family: 'Reggae One', cursive;
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
@@ -70,6 +76,7 @@ body{
 }
 .navbar a{
     font-size: 16px;
+    font-family: 'Reggae One', cursive;
     color: #ededed;
     text-decoration: none;
     font-weight:  500;
@@ -650,60 +657,6 @@ span {
     animation-delay:calc(.3s *var(--i)) ;
 }
 
-        
-@media (max-width: 768px) {
-        #menu-icon {
-            display: block;
-        }
-        .navbar {
-            display: none; 
-            flex-direction: column; 
-        }
-        .navbar.active {
-            display: flex; 
-        }
-  .home {
-    height: auto; 
-    padding: 5rem 5%; 
-    flex-direction: column; 
-    text-align: center;
-  }
-
-  .home-content {
-    max-width: 100%; 
-  }
-
-  .home-content h1 {
-    font-size: 300px; 
-    line-height: 1.9;
-  }
-
-  .home-content h3 {
-    font-size: 150px;
-  }
-
-  .home-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 1.5rem 0 3rem;
-  }
-
-  .btn-box {
-    flex-direction: column; 
-    gap: 20px; 
-    width: 600px; 
-    height: 200px;
-  }
-
-    .service-container {
-        flex-direction: column; 
-        gap: 2rem;
-    }
-    .portfolio-carousel {
-        flex-direction: column; 
-        gap: 2rem;
-    }
-}
 @media (max-width: 480px) {
     .header {
         padding: 10px 3%;
@@ -715,23 +668,24 @@ span {
     }
 
     .home-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .home-content h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .home-content p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.5;
     }
 
     .btn-box {
         flex-direction: column; 
         gap: 20px; 
-        width: 600px; 
-        height: 200px;
+        max-width: 100%; 
+        height: auto;
     }
 
     .service-item {
@@ -739,53 +693,108 @@ span {
     }
 
     .about-img {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
     }
 
+    .portfolio-container {
+        flex-direction: column; 
+        gap: 2rem;
+    }
+}
 
-    .porfolio-container {
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        height: auto; 
+        padding: 5rem 5%; 
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%; 
+    }
+
+    .home-content h1 {
+        font-size: 3rem; 
+        line-height: 1.4;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1.5rem 0 3rem;
+    }
+
+    .btn-box {
+        flex-direction: column; 
+        gap: 20px; 
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service-container,
+    .portfolio-carousel {
         flex-direction: column; 
         gap: 2rem;
     }
 }
 
 @media (max-width: 1024px) {
-
     .home {
-    height: auto; 
-    padding: 5rem 5%; 
-    flex-direction: column; 
-    text-align: center;
-  }
+        height: auto; 
+        padding: 5rem 5%; 
+        flex-direction: column; 
+        text-align: center;
+    }
 
-  .home-content {
-    max-width: 100%; 
-  }
+    .home-content {
+        max-width: 100%; 
+    }
 
-  .home-content h1 {
-    font-size: 5rem; 
-    line-height: 1.2;
-  }
+    .home-content h1 {
+        font-size: 4rem; 
+        line-height: 1.2;
+    }
 
-  .home-content h3 {
-    font-size: 3rem;
-  }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
 
-  .home-content p {
-    font-size: 2rem;
-    margin: 1.5rem 0 3rem;
-  }
-  .btn-box {
-    flex-direction: column; 
-    gap: 20px; 
-    width: 600px; 
-    height: 200px;
-  }
-  .btn-box.btns {
-    height: 50px;
-    width: 100%;
-  }
+    .home-content p {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 3rem;
+    }
+
+    .btn-box {
+        flex-direction: column; 
+        gap: 20px; 
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn-box.btns {
+        height: 50px;
+        width: 100%;
+    }
+
     .portfolio-item {
         flex: 1 1 100%; 
         margin-bottom: 2rem;
@@ -799,6 +808,7 @@ span {
         width: 100%;
     }
 }
+
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
